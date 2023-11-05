@@ -572,7 +572,7 @@ color: var(--WHITE, #FFF);
 }
 
 /*-----------------/FOOTER STYLES--------------*/
-
+ /* ---------------MODAL WINDOW STYLES--------- */
 .backdrop{
     position: fixed;
     top: 0;
@@ -591,4 +591,84 @@ color: var(--WHITE, #FFF);
 height: 584px;
 border-radius: 4px;
 background: var(--DAIRY, #FCFCFC);
+padding: 24px;
 }
+.modal-close-button-icon{
+   width: 8px;
+height: 8px;
+flex-shrink: 0;
+fill:#2E2F42;
+
+   
+   
+}
+.modal-close-button{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-color: var(--CORNFLOWER, #E7E9FC);
+    line-height: 0%;
+    fill:#2E2F42;
+}
+.modal-close-button:hover , 
+.modal-close-button:focus{
+ background-color: var(--OCEAN, #404BBF);
+}
+
+.modal-close-button:hover .modal-close-button-icon ,
+.modal-close-button:focus .modal-close-button-icon { 
+    fill: #FFFFFF;
+}
+
+
+.backdrop{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events:none ;
+}
+.backdrop.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: 250ms linear, visibility 250ms linear  ;
+}
+.backdrop-description{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1,50; 
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE, #2E2F42);
+    width: 360px;
+    padding-top: 48px;
+    margin-bottom: 16px;
+
+}
+.review-form-field-label{
+    display: block;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px; 
+    letter-spacing: -0.04em;
+    margin-bottom: 8px;
+}
+.review-form-field{
+    width: 100%;
+    height: 58px;
+    background: var(--DAIRY, #FCFCFC);
+    box-shadow: none;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+
+
+
+
+
+
+ /* ---------------/MODAL WINDOW STYLES--------- */
