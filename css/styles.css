@@ -588,7 +588,7 @@ color: var(--WHITE, #FFF);
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-height: 584px;
+
 border-radius: 4px;
 background: var(--DAIRY, #FCFCFC);
 padding: 24px;
@@ -721,6 +721,7 @@ color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 .review-form-checkbox{
     width: 16px;
     height: 16px;
+    box-shadow: none;
 }
 .review-form-checkbox-lable{
 font-size: 12px;
@@ -752,4 +753,13 @@ border: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 margin-right: 8px;
 margin-bottom: 24px;
 }
+
+.review-form-checkbox:checked + .review-form-checkbox-lable
+.review-form-own-checkbox{
+    background-color: var(--OCEAN, #404BBF); 
+    fill:#FFFFFF;
+}
+
+
+
  /* ---------------/MODAL WINDOW STYLES--------- */
