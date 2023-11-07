@@ -548,6 +548,25 @@ padding-bottom: 16px;
 }
 .footer-button{
     padding:8px 24px;
+    margin-left: 24px;
+    display: inline-flex;
+padding: 8px 24px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+border-radius: 4px;
+background: var(--IRIS, #4D5AE5);
+color: var(--WHITE, #FFF);
+text-align: center;
+
+/* Button Text */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: -0.04em;
+border: none;
     
 }
 
@@ -760,6 +779,28 @@ margin-bottom: 24px;
     fill:#FFFFFF;
 }
 
+..review-form-checkbox:focus + .review-form-checkbox-lable
+.review-form-own-checkbox{
+outline: 2px solid #404BBF;
+}
 
+.review-form-btn{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 169px;
+padding: 16px 32px;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+background: var(--OCEAN, #404BBF);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; 
+letter-spacing: -0,04em;
+color: var(--WHITE, #FFF);
+}
 
  /* ---------------/MODAL WINDOW STYLES--------- */
