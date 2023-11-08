@@ -776,8 +776,8 @@ margin-right: 8px;
 
 .review-form-checkbox:checked + .review-form-checkbox-lable
 .review-form-own-checkbox{
-    background-color: var(--OCEAN, #404BBF); 
-    fill:#FFFFFF;
+    background-color: var(--button-active);
+    fill: #F4F4FD;
     border: none;
 }
 
@@ -804,8 +804,5 @@ line-height: 24px;
 letter-spacing: -0,04em;
 color: var(--WHITE, #FFF);
 }
-.reviev-form-own-checkbox-icon{
-    background-color: var(--button-active);
-    fill: #F4F4FD;
-    border: none;}
+
  /* ---------------/MODAL WINDOW STYLES--------- */
