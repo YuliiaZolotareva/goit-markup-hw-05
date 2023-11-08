@@ -558,12 +558,12 @@ background: var(--IRIS, #4D5AE5);
 color: var(--WHITE, #FFF);
 text-align: center;
 min-width: 165px;
-font-family: Roboto;
+font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
-letter-spacing: -0.04em;
+letter-spacing: 0.04em;
 border: none;
     
 }
@@ -593,6 +593,9 @@ font-weight: 400;
 line-height: 2em; 
 letter-spacing: 0.48px;
 color: var(--WHITE, #FFF);
+}
+.icons-button-footer{
+    margin-left: 16px; 
 }
 
 /*-----------------/FOOTER STYLES--------------*/
