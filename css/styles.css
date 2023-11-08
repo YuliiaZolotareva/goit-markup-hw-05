@@ -540,10 +540,10 @@ width: 264px;
 .input-title{
 font-size: 16px;
 font-weight: 500;
-line-height: 1,5em; 
+line-height: 1.5;
 letter-spacing: 0.32px;
 color: var(--WHITE, #FFF);
-padding-bottom: 16px;
+margin-bottom: 16px;
 }
 .footer-button{
     padding:8px 24px;
@@ -557,8 +557,7 @@ border-radius: 4px;
 background: var(--IRIS, #4D5AE5);
 color: var(--WHITE, #FFF);
 text-align: center;
-
-/* Button Text */
+min-width: 165px;
 font-family: Roboto;
 font-size: 16px;
 font-style: normal;
@@ -571,17 +570,26 @@ border: none;
 
 .form-footer{
     gap:24px;
+    display: flex;
 }
-input{
-    width: 264px;
+input-footer{
+width: 264px;
 height: 40px;
+font-size: 12px; 
+line-height: 1.5;
+letter-spacing: 0.04em; 
+padding-left: 16px; 
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+flex-shrink: 0;
 flex-shrink: 0;
 border-radius: 4px;
 border: 1px solid var(--WHITE, #FFF);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-background: var(--NAVY-BLUE, #2E2F42);
+background-color: var(--NAVY-BLUE, #2E2F42);
+background-color: transparent; 
+color: #ffffff;
 }
-input::placeholder{
+input-footer::placeholder{
 font-size: 12px;
 font-weight: 400;
 line-height: 2em; 
