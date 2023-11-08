@@ -766,19 +766,19 @@ color: var(--IRIS, #4D5AE5);
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    fill: transparent;
+    fill:transparent;
     width: 16px;
 height: 16px;
-border-radius: 1px;
-border: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+border-radius: 2px;
+border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 margin-right: 8px;
-margin-bottom: 24px;
 }
 
 .review-form-checkbox:checked + .review-form-checkbox-lable
 .review-form-own-checkbox{
     background-color: var(--OCEAN, #404BBF); 
     fill:#FFFFFF;
+    border: none;
 }
 
 .review-form-checkbox:focus + .review-form-checkbox-lable
@@ -804,5 +804,8 @@ line-height: 24px;
 letter-spacing: -0,04em;
 color: var(--WHITE, #FFF);
 }
-
+.reviev-form-own-checkbox-icon{
+    background-color: var(--button-active);
+    fill: #F4F4FD;
+    border: none;}
  /* ---------------/MODAL WINDOW STYLES--------- */
