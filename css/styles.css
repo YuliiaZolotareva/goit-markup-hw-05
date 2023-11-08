@@ -741,6 +741,8 @@ color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     width: 16px;
     height: 16px;
     box-shadow: none;
+    stroke-width: 1px;
+    fill: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
 .review-form-checkbox-lable{
 font-size: 12px;
@@ -779,7 +781,7 @@ margin-bottom: 24px;
     fill:#FFFFFF;
 }
 
-..review-form-checkbox:focus + .review-form-checkbox-lable
+.review-form-checkbox:focus + .review-form-checkbox-lable
 .review-form-own-checkbox{
 outline: 2px solid #404BBF;
 }
