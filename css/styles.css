@@ -599,6 +599,7 @@ color: var(--WHITE, #FFF);
     height: 100%;
     z-index: 9999999;
     background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal{
     position: absolute;
@@ -610,13 +611,18 @@ color: var(--WHITE, #FFF);
 border-radius: 4px;
 background: var(--DAIRY, #FCFCFC);
 padding: 24px;
+min-height: 584px;
+box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+padding: 72px 24px 24px 24px;
+
 }
 .modal-close-button-icon{
    width: 8px;
 height: 8px;
 flex-shrink: 0;
 fill:#2E2F42;
-
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
    
 }
@@ -630,11 +636,18 @@ fill:#2E2F42;
     border-radius: 50%;
     background-color: var(--CORNFLOWER, #E7E9FC);
     line-height: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     fill:#2E2F42;
 }
 .modal-close-button:hover , 
 .modal-close-button:focus{
  background-color: var(--OCEAN, #404BBF);
+ border: none; 
 }
 
 .modal-close-button:hover .modal-close-button-icon ,
@@ -662,9 +675,8 @@ fill:#2E2F42;
     letter-spacing: 0.02em;
     color: var(--NAVY-BLUE, #2E2F42);
     width: 360px;
-    padding-top: 48px;
     margin-bottom: 16px;
-
+    line-height: 1.5;
 }
 .review-form-field-label{
     display: block;
@@ -674,6 +686,7 @@ fill:#2E2F42;
     line-height: 14px; 
     letter-spacing: -0.04em;
     margin-bottom: 8px;
+    
 }
 .review-form-field{
     width: 100%;
